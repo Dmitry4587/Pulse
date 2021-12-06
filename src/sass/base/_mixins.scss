@@ -1,0 +1,60 @@
+@mixin light {
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.5em;
+        height: 100%;
+        background-color: rgba(#fff, 0.6);
+        transform: translateX(-4em) skewX(-45deg);
+    } 
+    &:hover {
+        box-shadow: 0px 0px 20px red;
+        border: none;
+        &:before {
+            animation: move-light 0.5s;
+        }     
+    } 
+    
+    @keyframes move-light {
+        from {
+            transform: translateX(-4em) skewX(-45deg);
+        }
+    to {
+        transform: translateX(20em) skewX(-45deg);
+    }
+}
+}
+@mixin facebook {
+    &:hover {
+        border-color: #3B5998;
+        box-shadow: 0px 0px 15px #3B5998;
+        span {
+        color: #3B5998;
+        }
+    }
+}
+
+
+
+@mixin pin  {
+    &:hover {
+        border-color: #C8232C;
+        box-shadow: 0px 0px 15px #C8232C;
+        span {
+        color: #C8232C;
+        }
+    }
+}
+   
+
+@mixin instagram {
+    &:hover {
+        border-color: #FEDA77;
+        box-shadow: 0px 0px 15px #FEDA77;
+        span {
+        color: #FEDA77;
+        }
+    }
+}

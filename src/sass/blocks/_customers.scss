@@ -1,0 +1,36 @@
+.customers {
+    padding-bottom: 73px;
+    &__blocks {
+        margin-top: 73px;
+    }
+    &__wrapper {
+        margin-top: 100px;
+        display: flex;
+        align-items: flex-start;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    &__round {
+        margin-right: 63px;
+        width: 169px;
+        height: 169px;
+    }
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #0d0d0d;
+    }
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 300;
+        color: #646464;
+    }
+    &__text {
+        margin-top: 20px;
+        line-height: 1.2;
+        font-size: 16px;
+        font-weight: 300;
+        color: #0d0d0d;
+    }
+}
